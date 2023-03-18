@@ -1,0 +1,33 @@
+{
+  "name": "presentation",
+  "private": true,
+  "scripts": {
+    "preinstall": "pnpm -r --if-present graphql-codegen",
+    "build": "pnpm --if-present -r build",
+    "start": "pnpm -r --parallel start",
+    "start:slides": "pnpm --filter @presentation/slides start",
+    "start:graphql": "pnpm --filter @presentation/example-graphql-api start",
+    "start:rest": "pnpm --parallel --filter @presentation/shipping-cost-app --filter @presentation/example-rest-api start",
+    "start:remix": "pnpm --filter @presentation/example-remix-app start",
+    "test": "vitest",
+    "format": "npx prettier --write ."
+  },
+  "dependencies": {
+    "reflect-metadata": "0.1.13",
+    "@faker-js/faker": "7.6.0",
+    "cuid": "3.0.0",
+    "typeorm": "0.3.12",
+    "sqlite": "4.1.2"
+  },
+  "devDependencies": {
+    "vitest": "0.28.5",
+    "supertest": "6.3.3",
+    "typescript": "4.9.5",
+    "ts-node": "10.9.1",
+    "tslib": "2.5.0",
+    "nodemon": "2.0.20",
+    "@types/node": "18.14.1",
+    "tsconfig-paths": "3.14.2",
+    "@tsconfig/node16": "1.0.3"
+  }
+}

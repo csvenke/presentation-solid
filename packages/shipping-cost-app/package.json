@@ -1,0 +1,11 @@
+{
+  "name": "@presentation/shipping-cost-app",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "preinstall": "tsc",
+    "build": "tsc",
+    "start": "tsc -w"
+  }
+}

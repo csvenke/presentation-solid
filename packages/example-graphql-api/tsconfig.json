@@ -1,0 +1,24 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "lib": ["DOM"]
+  },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true,
+    "require": ["tsconfig-paths/register"],
+    "files": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+      "experimentalDecorators": true
+    }
+  },
+  "exclude": ["node_modules"]
+}

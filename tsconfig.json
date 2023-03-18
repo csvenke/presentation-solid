@@ -1,0 +1,13 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "example-graphql-api": ["example-graphql-api/*"],
+      "example-rest-api": ["example-graphql-api/*"],
+      "example-remix-app": ["example-remix-app/*"],
+      "shipping-cost-app": ["shipping-cost-app/*"],
+      "slides": ["slides/*"]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@presentation/example-graphql-api",
+  "version": "1.0.0",
+  "scripts": {
+    "prestart": "graphql-codegen",
+    "start": "nodemon",
+    "start:prod": "ts-node src/main.ts",
+    "graphql-codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "@apollo/server": "4.4.0",
+    "@apollo/subgraph": "2.3.2",
+    "graphql": "16.6.0",
+    "graphql-tag": "2.12.6",
+    "cuid": "3.0.0",
+    "@faker-js/faker": "7.6.0",
+    "@presentation/shipping-cost-app": "workspace:*"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "3.2.1",
+    "@graphql-codegen/typescript-resolvers": "3.1.0"
+  }
+}

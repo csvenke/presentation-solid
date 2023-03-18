@@ -1,0 +1,9 @@
+@font-face {
+  font-family: HelveticaHyperCompressed;
+  src: url("./fonts/Helvetica-Ultra-Compressed.otf");
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
